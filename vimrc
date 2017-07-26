@@ -80,7 +80,7 @@ vno v <esc>
 noremap <F3> :Autoformat<CR><CR>
 
 "Ignoring things, primarily for the sake of ctrl P, might not be valid for your use case
-set wildignore+=*.iml,*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*,*/public/*,*/releases/*,*/dist/*
+set wildignore+=*.iml,*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*,*/public/*,*/releases/*,*/dist/*,package-lock.json,yarn.lock
 
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
