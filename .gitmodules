@@ -106,3 +106,6 @@
 [submodule "bundle/typescript-vim"]
 	path = bundle/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "bundle/rename"]
+	path = bundle/rename
+	url = https://github.com/danro/rename.vim.git
