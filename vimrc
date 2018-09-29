@@ -105,6 +105,9 @@ au BufNewFile,BufRead *.pls set filetype=plsql.sqlvorax
 " Nerdtree
 noremap <silent> <Leader>v :NERDTreeFind<CR>
 let NERDTreeQuitOnOpen = 1
+let NERDTreeAutoDeleteBuffer = 1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
 
 " Hybrid line numbers
 set number relativenumber
