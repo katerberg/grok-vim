@@ -59,7 +59,7 @@ set hlsearch
 let base16colorspace=256 " Access colors present in 256 colorspace
 set t_Co=256 " 256 color mode
 set background=dark
-colorscheme base16-default
+"colorscheme base16-default
 
 " Window splits
 map <C-J> <C-W>j
@@ -80,7 +80,7 @@ vno v <esc>
 noremap <F3> :Autoformat<CR><CR>
 
 "Ignoring things, primarily for the sake of ctrl P, might not be valid for your use case
-set wildignore+=*.iml,*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*,*/public/*,*/releases/*,*/dist/*,package-lock.json,yarn.lock
+set wildignore+=*.iml,*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*,*/public/*,*/releases/*,*/dist/*,*/coverage/*,package-lock.json,yarn.lock
 
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
@@ -102,3 +102,9 @@ let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 au BufNewFile,BufRead *.plb set filetype=plsql.plsqlvorax
 au BufNewFile,BufRead *.pls set filetype=plsql.sqlvorax
 
+" Nerdtree
+noremap <silent> <Leader>v :NERDTreeFind<CR>
+let NERDTreeQuitOnOpen = 1
+
+" Hybrid line numbers
+set number relativenumber
